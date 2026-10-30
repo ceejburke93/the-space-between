@@ -1,0 +1,88 @@
+{
+  "version": "iwsdk.scene.v1",
+  "units": "meters",
+  "environment": {
+    "toneMapping": "aces",
+    "exposure": 1.2,
+    "shadows": false
+  },
+  "resources": {},
+  "nodes": [
+    {
+      "id": "spatial-menu",
+      "name": "spatial-menu",
+      "content": {
+        "type": "asset",
+        "asset": "planet-menu"
+      },
+      "transform": {
+        "position": [
+          0,
+          1.3,
+          -0.44
+        ]
+      },
+      "components": {
+        "RayInteractable": {},
+        "PokeInteractable": {}
+      }
+    },
+    {
+      "id": "spatial-pause",
+      "name": "spatial-pause",
+      "content": {
+        "type": "asset",
+        "asset": "pause-menu"
+      },
+      "transform": {
+        "position": [
+          0,
+          1.3,
+          -0.44
+        ]
+      },
+      "components": {
+        "RayInteractable": {},
+        "PokeInteractable": {}
+      }
+    },
+    {
+      "id": "spatial-settings",
+      "name": "spatial-settings",
+      "content": {
+        "type": "asset",
+        "asset": "comfort-settings"
+      },
+      "transform": {
+        "position": [
+          0,
+          1.3,
+          -0.44
+        ]
+      },
+      "components": {
+        "RayInteractable": {},
+        "PokeInteractable": {}
+      }
+    },
+    {
+      "id": "spatial-discovery",
+      "name": "spatial-discovery",
+      "content": {
+        "type": "asset",
+        "asset": "discovery-controls"
+      },
+      "transform": {
+        "position": [
+          0,
+          1.3,
+          -0.44
+        ]
+      },
+      "components": {
+        "RayInteractable": {},
+        "PokeInteractable": {}
+      }
+    }
+  ]
+}
