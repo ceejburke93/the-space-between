@@ -1,0 +1,14 @@
+<style>
+.panel { width:400px; padding:24px; gap:16px; flex-direction:column; background-color:#102832; border-radius:20px; }
+.title { font-size:26px; color:#f1e6c8; margin-bottom:4px; }
+.action { height:72px; min-height:72px; width:352px; }
+.label { font-size:21px; }
+</style>
+<Panel class="panel">
+ <div class="title">The Space Between</div>
+ <Button id="play" class="action"><ButtonLabel id="play-label" class="label">Play</ButtonLabel></Button>
+ <Button id="restart" class="action"><ButtonLabel class="label">New crossing</ButtonLabel></Button>
+ <Button id="sound-toggle" class="action"><ButtonLabel id="sound-label" class="label">Sound off</ButtonLabel></Button>
+ <Button id="settings" class="action"><ButtonLabel class="label">Comfort & controls</ButtonLabel></Button>
+ <Button id="exit" class="action"><ButtonLabel class="label">Back to browser</ButtonLabel></Button>
+</Panel>

@@ -1,0 +1,15 @@
+<style>
+.panel { width:400px; padding:24px; gap:16px; flex-direction:column; background-color:#102832; border-radius:20px; }
+.title { font-size:26px; color:#f1e6c8; }
+.action { width:352px; height:72px; min-height:72px; }
+.label { font-size:21px; }
+</style>
+<Panel class="panel">
+ <div class="title">Make yourself comfortable</div>
+ <Button id="place-world" class="action"><ButtonLabel class="label">Place world in front of me</ButtonLabel></Button>
+ <Button id="raise-world" class="action"><ButtonLabel class="label">Raise world</ButtonLabel></Button>
+ <Button id="lower-world" class="action"><ButtonLabel class="label">Lower world</ButtonLabel></Button>
+ <Button id="reach-toggle" class="action"><ButtonLabel id="reach-label" class="label">Reduced reach: off</ButtonLabel></Button>
+ <Button id="assist-toggle" class="action"><ButtonLabel id="assist-label" class="label">One-hand assist: off</ButtonLabel></Button>
+ <Button id="settings-back" class="action"><ButtonLabel class="label">Back</ButtonLabel></Button>
+</Panel>

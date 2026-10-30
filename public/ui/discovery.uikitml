@@ -1,0 +1,9 @@
+<style>
+.panel { width:352px; gap:16px; flex-direction:row; }
+.action { width:168px; height:72px; min-height:72px; }
+.label { font-size:21px; }
+</style>
+<Panel class="panel">
+ <Button id="explore" class="action"><ButtonLabel class="label">Explore closer</ButtonLabel></Button>
+ <Button id="skip-intro" class="action"><ButtonLabel class="label">Skip intro</ButtonLabel></Button>
+</Panel>
