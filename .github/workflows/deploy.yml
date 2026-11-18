@@ -22,7 +22,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
+        env:
+          npm_config_onnxruntime_node_install_cuda: skip
       - run: npm run verify
       - run: npm run build -- --base=/the-space-between/
       - uses: actions/upload-pages-artifact@v3
