@@ -1,3 +1,18 @@
+# The Space Between — working agreements
+
+This repository is the application. Launch Codex from this folder, not the parent chat/output folder. Keep SDK-specific guidance below.
+
+- Preserve the positive, meditative atmosphere: no failure penalties, countdown pressure or involuntary camera motion.
+- Every core puzzle must remain completable with one hand and reduced reach. Tracking loss pauses safely; earned progress and save compatibility must survive.
+- Validate in the desktop emulator. Physical Quest testing is not a requirement for this project. Emulator callback rates are not headset FPS measurements.
+- Use Node 24 and Python 3.9+ (standard library only for the emulator harness). Install dependencies with `npm ci`.
+- Run `npm run verify` for deterministic checks. Use `npm run verify:emulator` for a read-only readiness check; replay suites require `--replay` because they replace the active checkpoint in the managed development browser.
+- Use the CLI-managed `npm run dev` for immersive work. `dev:runtime` is a Vite-only diagnostic path, not emulator validation.
+- Keep the managed emulator visible unless the user requests otherwise. The development origin (normally https://localhost:8081) and production preview (normally http://localhost:8082) have separate browser saves; do not clear either.
+- Use the repository `tsb-verify` skill for game verification. Existing IWSDK skills own model, scene and interaction work.
+- No deployment, GitHub writes, scheduled jobs, provider changes or paid integrations are part of ordinary verification. Publishing remains deferred until explicitly requested.
+- Never commit secrets or generated machine-specific `.codex/config.toml`. Approved repository skills are versionable under `.agents/skills/`; screenshots and reports go into ignored `artifacts/`.
+
 # IWSDK project
 
 A Vite + TypeScript or JavaScript app, but several things do **not** work the way

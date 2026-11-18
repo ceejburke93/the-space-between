@@ -51,9 +51,18 @@ pids/
 *.key
 *.p12
 *.pfx
-.agents/
+.agents/*
+!.agents/skills/
+.agents/skills/*
+!.agents/skills/iwsdk-*/
+!.agents/skills/tsb-verify/
 .claude/
 .cursor/
 .codex/
 work/
 opencode.json
+
+# Local verification evidence and Python bytecode
+artifacts/
+__pycache__/
+*.pyc

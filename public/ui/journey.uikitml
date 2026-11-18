@@ -1,0 +1,14 @@
+<style>
+.panel { width:400px; padding:24px; gap:16px; flex-direction:column; background-color:#102832; border-radius:20px; }
+.title { font-size:24px; color:#f1e6c8; }
+.action { width:352px; height:72px; min-height:72px; }
+.label { font-size:20px; }
+</style>
+<Panel class="panel">
+ <div id="journey-title" class="title">Your little world</div>
+ <Button id="journey-0" class="action"><ButtonLabel id="journey-option-0" class="label">Grass</ButtonLabel></Button>
+ <Button id="journey-1" class="action"><ButtonLabel id="journey-option-1" class="label">Water</ButtonLabel></Button>
+ <Button id="journey-2" class="action"><ButtonLabel id="journey-option-2" class="label">Fire</ButtonLabel></Button>
+ <Button id="journey-3" class="action"><ButtonLabel id="journey-option-3" class="label">Earth</ButtonLabel></Button>
+ <Button id="journey-back" class="action"><ButtonLabel class="label">Back</ButtonLabel></Button>
+</Panel>

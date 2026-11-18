@@ -12,7 +12,12 @@
     "reference:warmup": "iwsdk reference warmup",
     "typecheck": "tsc --noEmit",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "verify": "npm run typecheck && npm test && npm run test:emulator-harness && npm run build",
+    "test:emulator-harness": "node --experimental-strip-types tools/emulator/check-targets.mjs && python3 -m unittest discover -s tools/emulator -p \"test_*.py\"",
+    "verify:emulator": "python3 tools/emulator/verify.py",
+    "setup:agent": "node tools/setup-agent.mjs"
   },
   "dependencies": {
     "@iwsdk/core": "1.1.0-rc.2",

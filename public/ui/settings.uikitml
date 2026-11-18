@@ -11,5 +11,6 @@
  <Button id="lower-world" class="action"><ButtonLabel class="label">Lower world</ButtonLabel></Button>
  <Button id="reach-toggle" class="action"><ButtonLabel id="reach-label" class="label">Reduced reach: off</ButtonLabel></Button>
  <Button id="assist-toggle" class="action"><ButtonLabel id="assist-label" class="label">One-hand assist: off</ButtonLabel></Button>
+ <Button id="guidance-toggle" class="action"><ButtonLabel id="guidance-label" class="label">Puzzle guidance: gentle</ButtonLabel></Button>
  <Button id="settings-back" class="action"><ButtonLabel class="label">Back</ButtonLabel></Button>
 </Panel>

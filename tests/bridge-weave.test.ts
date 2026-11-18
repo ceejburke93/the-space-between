@@ -1,0 +1,7 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { weaveIndices,updateWeave,WEAVE_VERTICES } from '../src/bridge-weave.ts';
+const a={x:-.23,y:1.02,z:-.62},b={x:.23,y:1.02,z:-.62},near=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-6,`${a} != ${b}`);
+test('batched threads keep all 480 segments without joining different strands',()=>{const indices=weaveIndices();assert.equal(indices.length,960);for(let i=0;i<indices.length;i+=2){assert.equal(indices[i+1],indices[i]+1);assert.equal(Math.floor(indices[i]/33),Math.floor(indices[i+1]/33));assert.ok(indices[i+1]<WEAVE_VERTICES);}});
+test('every snapped thread vertex stays on the same deck height used by the feet',()=>{const positions=new Float32Array(WEAVE_VERTICES*3),height=(x:number)=>1.023-Math.sin((x+.23)/.46*Math.PI)*.018;updateWeave(positions,a,b,true,height);for(let i=0;i<positions.length;i+=3)near(positions[i+1],height(positions[i]));near(positions[0],a.x);near(positions[32*3],b.x);near(positions[2],a.z-.0275);near(positions[(6*33)*3+2],a.z+.0275);});
+test('the floating thread keeps both hand contacts and the existing sag before shore support',()=>{const positions=new Float32Array(WEAVE_VERTICES*3),left={x:-.1,y:1.13,z:-.5},right={x:.15,y:1.18,z:-.58};updateWeave(positions,left,right,false,()=>0);near(positions[1],left.y+.003);near(positions[32*3+1],right.y+.003);near(positions[16*3+1],(left.y+right.y)/2-.018+.003);assert.ok(positions.every(Number.isFinite));});

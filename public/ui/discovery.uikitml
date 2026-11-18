@@ -5,5 +5,5 @@
 </style>
 <Panel class="panel">
  <Button id="explore" class="action"><ButtonLabel class="label">Explore closer</ButtonLabel></Button>
- <Button id="skip-intro" class="action"><ButtonLabel class="label">Skip intro</ButtonLabel></Button>
+ <Button id="skip-intro" class="action"><ButtonLabel class="label">Meet the traveler</ButtonLabel></Button>
 </Panel>

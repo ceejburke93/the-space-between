@@ -83,6 +83,44 @@
         "RayInteractable": {},
         "PokeInteractable": {}
       }
+    },
+    {
+      "id": "spatial-homecoming",
+      "name": "spatial-homecoming",
+      "content": {
+        "type": "asset",
+        "asset": "homecoming"
+      },
+      "transform": {
+        "position": [
+          0,
+          1.3,
+          -0.44
+        ]
+      },
+      "components": {
+        "RayInteractable": {},
+        "PokeInteractable": {}
+      }
+    },
+    {
+      "id": "spatial-journey",
+      "name": "spatial-journey",
+      "content": {
+        "type": "asset",
+        "asset": "journey-picker"
+      },
+      "transform": {
+        "position": [
+          0,
+          1.3,
+          -0.44
+        ]
+      },
+      "components": {
+        "RayInteractable": {},
+        "PokeInteractable": {}
+      }
     }
   ]
 }

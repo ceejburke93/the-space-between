@@ -1,0 +1,2 @@
+<style>.action { width:352px; height:72px; min-height:72px; }.label { font-size:21px; }</style>
+<Button id="next-chapter" class="action"><ButtonLabel id="next-label" class="label">Next chapter</ButtonLabel></Button>

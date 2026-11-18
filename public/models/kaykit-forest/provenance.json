@@ -1,0 +1,28 @@
+{
+  "creator": "Kay Lousberg",
+  "pack": "KayKit Forest Nature Pack 1.0 FREE",
+  "source": "https://kaylousberg.itch.io/kaykit-forest",
+  "license": "CC0-1.0",
+  "retrieved": "2026-11-02",
+  "archiveSha256": "2ee83e63bb7695f2d884ec27ddf6fce020789a452e7d5c5b0bbdfc4f6ea1fc8c",
+  "files": {
+    "Bush_2_A_Color1.bin": "156a986b87b097725a1c675ea20eeaf3f788014742dbf4b8f0fd2c69f27cad98",
+    "Bush_2_A_Color1.gltf": "c41284ba3191bdda026380527edf9fb0dcf03b5dd26c8779ed056edb6526c444",
+    "Grass_1_A_Color1.bin": "d293510be3ca4a6062dc305c22a143ba134fc49af65aaba064cc8f8d868d6c6e",
+    "Grass_1_A_Color1.gltf": "58686904164d636e8731544fbb6911bf1ebc068841fe6c127f0c509b1449212b",
+    "License.txt": "987811fa42c7548ad487324531813b0210ee6d1ebd410089e881820630e3be54",
+    "Rock_1_A_Color1.bin": "1c94027b4b01e479f14c6a0288445f2ec74c4971bd5154095c4ea261ddea5b95",
+    "Rock_1_A_Color1.gltf": "ca24326b9c24556227c68df64933122f34a972cd38b6e95c53353fefa97dbc80",
+    "Rock_2_A_Color1.bin": "ffee05221dda59936ba6c94112b65bb3c8a38e938fbb219a2808a1590daab050",
+    "Rock_2_A_Color1.gltf": "bbe5254a4c13be7f4aa017297a9458db441e99234028af378d29207d80be4696",
+    "Tree_1_A_Color1.bin": "76a10ffa74960d730f0895a2599e5d56cc50a553d6624a14422420eb9b083979",
+    "Tree_1_A_Color1.gltf": "9d972eba9d61fc563cb7c3248f1be057190859ce2554ad2032df27c3d09e06c6",
+    "Tree_2_B_Color1.bin": "90e260b69154a83b1799d68778fb35ddeaaf5f0eb69ac67384c99770ed7bf821",
+    "Tree_2_B_Color1.gltf": "3094d793c2625c2543c1c8106864426f6c61cfe13b2cff0a2c133aec23065408",
+    "Tree_3_A_Color1.bin": "ea2f20e847bd3bcf748b9f1cf9932abe45967db8dcacfeafaea1f07e3da6a2e9",
+    "Tree_3_A_Color1.gltf": "a5140f21978004544844df4c2969625724c2c263e74f798716ea9e115216a230",
+    "Tree_Bare_1_A_Color1.bin": "6967f9187c6d6e5b829a022921115fac8990a693b800cf65bdff181e6b5e20d3",
+    "Tree_Bare_1_A_Color1.gltf": "f246cae013cb68c80b58d2493accc6b60bd2b6a11f5567879d5ef1b73b44d8db",
+    "forest_texture.png": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+  }
+}

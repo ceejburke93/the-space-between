@@ -10,7 +10,7 @@ footer{bottom:22px}.actions{display:flex;gap:6px;pointer-events:auto}button{font
 .cosmos .vignette{background:radial-gradient(ellipse at center,transparent 25%,#00000088 100%)}.cosmos #guide-preview{display:none}.cosmos #reset{display:none}.cosmos .progress{display:none}.cosmos main p{color:#a5b4c8}.cosmos .guide-foot{justify-content:center}.cosmos .actions{flex-wrap:wrap}.cosmos #scene-container{background:#02050c}
 #planet-menu{position:fixed;top:15%;left:50%;transform:translateX(-50%);text-align:center;width:min(440px,90%);padding:25px 30px;background:linear-gradient(180deg,#0b1b25f0,#0b1b25d9);border:1px solid #d9d4a12e;border-radius:18px;backdrop-filter:blur(14px)}#planet-menu[hidden]{display:none}.menu-kicker{font-size:8px;letter-spacing:2px;color:#c9b98b}#planet-menu h2{font-size:38px;margin:15px 0 10px}#planet-menu p{font-size:11px;line-height:1.6;color:#b6c8bf;margin-bottom:20px}#planet-menu button{display:block;margin:9px auto;width:220px}#planet-menu #play-game{background:#d8c598;color:#142b30;border-color:#d8c598;font-size:12px}#planet-menu small{display:block;margin-top:20px;font-size:9px;color:#9fb7ae}.at-menu main,.at-menu .guide,.at-menu #reset,.at-menu #return-menu,.at-menu #guide-preview,.cosmos #return-menu{display:none}body.xr #planet-menu{display:none}@media(max-width:600px){#planet-menu{top:16%;padding:22px 16px}#planet-menu h2{font-size:32px}}
 [hidden]{display:none!important}
-.cosmos .step,.cosmos #hint,.cosmos .guide-foot,.cosmos main p,.cosmos .eyebrow,.cosmos .prototype{display:none}.cosmos .guide{bottom:80px}.cosmos .guide h2{font:11px 'DM Sans',sans-serif;letter-spacing:.5px;color:#b6c5ce}.cosmos footer{justify-content:center}.cosmos .actions{justify-content:center}.cosmos #sound{display:none}.cosmos #explore-closer{border-color:#d8c28a88;color:#f3dfa6;padding:12px 24px}.cosmos #skip-discovery{border-color:transparent;background:transparent;color:#a7b6c0;padding:12px}.cosmos header .wordmark span{display:none}
+.cosmos .step,.cosmos #hint,.cosmos .guide-foot,.cosmos main p,.cosmos .eyebrow,.cosmos .prototype{display:none}.cosmos .guide{bottom:80px}.cosmos .guide h2{font:11px 'DM Sans',sans-serif;letter-spacing:.5px;color:#b6c5ce}.cosmos footer{justify-content:center}.cosmos .actions{justify-content:center}.cosmos #sound{display:block;border-color:transparent;background:transparent;color:#9fb2bc;padding:8px 10px}.cosmos #explore-closer{border-color:#d8c28a88;color:#f3dfa6;padding:12px 24px}.cosmos #skip-discovery{border-color:transparent;background:transparent;color:#a7b6c0;padding:12px}.cosmos header .wordmark span{display:none}
 /* Keep the playable world free of title-page and diagnostic UI. */
 body:not(.cosmos):not(.at-menu) main,
 body:not(.cosmos):not(.at-menu) header,
@@ -19,7 +19,7 @@ body:not(.cosmos):not(.at-menu) .guide #hint,
 body:not(.cosmos):not(.at-menu) .guide .progress,
 body:not(.cosmos):not(.at-menu) .guide .guide-foot,
 body:not(.cosmos):not(.at-menu) footer .prototype,
-body:not(.cosmos):not(.at-menu) .actions button:not(#return-menu){display:none}
+body:not(.cosmos):not(.at-menu) .actions button:not(#return-menu):not(#next-journey){display:none}
 body:not(.cosmos):not(.at-menu) .guide{bottom:65px;width:90%;opacity:1}
 body:not(.cosmos):not(.at-menu) .guide h2{font:14px 'DM Sans',sans-serif;line-height:1.5;color:#dae4d9;margin:0}
 body:not(.cosmos):not(.at-menu) footer{bottom:18px;justify-content:center}
@@ -29,3 +29,12 @@ body:not(.cosmos):not(.at-menu) #return-menu{padding:8px 18px;background:#0b202b
 .at-menu footer{justify-content:center}.at-menu .actions{justify-content:center;width:100%}
 /* Keep optional comfort and diagnostic details usable in short desktop windows. */
 #planet-menu{max-height:76vh;overflow-y:auto}#planet-menu [hidden]{display:none!important}#planet-menu details{margin-top:14px;padding-top:12px;border-top:1px solid #ffffff20}#planet-menu summary{cursor:pointer;font-size:12px;color:#d9e2d8;padding:5px}#planet-menu details p{text-align:left;margin:10px 0}#planet-menu details small{text-align:left;line-height:1.6}
+
+.at-menu #next-journey,.cosmos #next-journey{display:none}#next-journey{border-color:#d8c28a88;color:#f3dfa6}
+/* The completed garden needs no persistent instruction overlay. */
+body.garden-rest .guide{display:none}
+
+/* Let the near planet fill the view without a title across its surface. */
+.cosmos.planet-close main{opacity:0}
+
+body.garden-rest.explicit-memory .guide{display:block}
